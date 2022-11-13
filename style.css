@@ -97,6 +97,9 @@ body{
     justify-content: center;
     align-items: center;
 }
+.active{
+    width:50px;
+}
 .hoverImg{
     position: absolute;
     width: 350px;
