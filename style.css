@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+--SoftBlue: hsl(215, 51%, 70%);
+--Cyan: hsl(178, 100%, 50%);
+--VeryDarkBlueMainBG: hsl(217, 54%, 11%);
+--VeryDarkDlueCardBG: hsl(216, 50%, 16%);
+--VeryDarkBlueLine: hsl(215, 32%, 27%); 
+--White: hsl(0, 0%, 100%);
+}
+
+body{
+    background-color: var(--VeryDarkBlueMainBG);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    background-color: var(--VeryDarkDlueCardBG);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--White);
+    font-family: outfit;
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 40px black;
+    margin-top: 20px;
+}
+.mainImg{
+    width: 350px;
+    border-radius: 20px;
+    margin-top: 20px;
+    position: relative;
+}
+.data{
+    padding-left: 25px;
+    padding-right: 20px;
+}
+.title{
+    padding-top: 20px ;
+    padding-bottom: 20px ;
+}
+.para{
+    color: var(--SoftBlue);
+}
+.pr:hover{
+    color: var(--Cyan);
+}
+.title:hover{
+    color: var(--Cyan);
+}
+.da{
+    color: var(--SoftBlue);
+}
+.priceDay{
+    display: flex;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.price{
+    display: flex;
+}
+.price img , .days img{
+    padding-right: 10px;
+}
+.days{
+    display: flex;
+}
+.creator{
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.creator img{
+    width: 30px;
+    margin-right: 10px;
+}
+.creator p{
+    color: var(--SoftBlue);
+}
+.creatorName{
+    color: var(--White);
+}
+.img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hoverImg{
+    position: absolute;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    background-color: hsl(178, 100%, 50%, 20%);
+    height: 55%;
+    margin-top: 24px;
+    border-radius: 20px;
+    transition: all 1s ease-out;
+}
+.hoverImg:hover{
+    opacity: 1;
+}
+.creatorName:hover{
+    color: var(--Cyan);
+}
+hr{
+    background-color: var(--SoftBlue);
+    border-radius: 20px;
+}
+
+.attribution{
+    color: var(--White);
+    margin: 20px;
+    font-family: outfit;
+}
+.attribution a{
+    color: var(--SoftBlue);
+    text-decoration: none;
+}
+.attribution a:hover{
+    color: var(--Cyan);
+}
+
+@media (min-width:300px) and (max-width:375px) {
+    .card{
+        width: 300px;
+        margin-top: 20px;
+    }
+    .mainImg{
+        width:250px;
+    }
+    .hoverImg{
+        width:250px;
+        height: 46%;
+    }
+}
